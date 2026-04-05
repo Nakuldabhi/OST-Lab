@@ -1,0 +1,24 @@
+{
+  "name": "pac_assignment",
+  "version": "1.0.0",
+  "description": "- **Name:** Nakul Dabhi - **Repository:** OST-Lab - **Assignment:** PAC (Practical Assignment Compilation)",
+  "main": "feature1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nakuldabhi/OST-Lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nakuldabhi/OST-Lab/issues"
+  },
+  "homepage": "https://github.com/Nakuldabhi/OST-Lab#readme",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "lodash": "^4.18.1"
+  }
+}

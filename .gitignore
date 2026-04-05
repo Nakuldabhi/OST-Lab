@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+PAC_Assignment_OST_Lab.docx
+generate_docx.py
+PAC_Assignment/index.html
+PAC_Assignment/README.md
+PAC_Assignment/feature1.js
+PAC_Assignment/package.json
+PAC_Assignment/package-lock.json
+PAC_Assignment/screenshots/
+PAC_Assignment/node_modules/
