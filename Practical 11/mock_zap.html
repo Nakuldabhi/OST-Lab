@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZAP Scanning Report</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+.header { background-color: #000; color: #fff; padding: 20px; text-align: center; }
+.content { background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+.high { background-color: #ffcccc; }
+.medium { background-color: #ffffcc; }
+.low { background-color: #ccffcc; }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>OWASP ZAP Scanning Report</h1>
+    <p>Target: http://zero.webappsecurity.com/</p>
+</div>
+<div class="content">
+    <h2>Alerts Summary</h2>
+    <table>
+        <tr><th>Risk Level</th><th>Number of Alerts</th></tr>
+        <tr class="high"><td>High</td><td>0</td></tr>
+        <tr class="medium"><td>Medium</td><td>2</td></tr>
+        <tr class="low"><td>Low</td><td>5</td></tr>
+    </table>
+    
+    <h2>Alert Details</h2>
+    <table>
+        <tr><th>Alert</th><th>Risk</th><th>Description</th></tr>
+        <tr class="medium"><td>X-Frame-Options Header Missing</td><td>Medium</td><td>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks.</td></tr>
+        <tr class="medium"><td>Content Security Policy (CSP) Header Not Set</td><td>Medium</td><td>Content Security Policy is an added layer of security that helps to detect and mitigate certain types of attacks.</td></tr>
+        <tr class="low"><td>X-Content-Type-Options Header Missing</td><td>Low</td><td>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</td></tr>
+    </table>
+</div>
+</body>
+</html>

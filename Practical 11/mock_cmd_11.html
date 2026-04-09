@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #0c0c0c;
+    color: #cccccc;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+<div>Microsoft Windows [Version 10.0.26200.8039]</div>
+<div>(c) Microsoft Corporation. All rights reserved.</div>
+<br>
+<div>C:\Users\ASUS\Desktop\Nakul\Practical 11&gt;zap.bat -daemon -host 127.0.0.1 -port 8080 -config api.disablekey=true</div>
+<div>Found Java version 17.0.8</div>
+<div>Available memory: 8192 MB</div>
+<div>Using JVM args: -Xmx2048m</div>
+<div>[ZAP-daemon] INFO org.zaproxy.zap.DaemonBootstrap - OWASP ZAP 2.14.0 started.</div>
+<div>[ZAP-daemon] INFO org.zaproxy.zap.extension.api.ExtensionAPI - Starting ZAP API on 127.0.0.1:8080</div>
+<div>[ZAP-daemon] INFO org.zaproxy.zap.DaemonBootstrap - ZAP is now listening on 127.0.0.1:8080</div>
+<br>
+<div>C:\Users\ASUS\Desktop\Nakul\Practical 11&gt;curl -g "http://127.0.0.1:8080/JSON/spider/action/scan/?url=http://zero.webappsecurity.com/&amp;recurse=true"</div>
+<div>{"scan":"0"}</div>
+<br>
+<div>C:\Users\ASUS\Desktop\Nakul\Practical 11&gt;curl -g "http://127.0.0.1:8080/JSON/core/view/alerts/?baseurl=http://zero.webappsecurity.com/"</div>
+<div style="word-wrap: break-word; white-space: pre-wrap;">{"alerts":[{"sourceid":"3","other":"","method":"GET","evidence":"&lt;title&gt;Zero - Log in&lt;/title&gt;","pluginId":"10021","cweid":"200","confidence":"Medium","wascid":"13","description":"X-Content-Type-Options header missing","messageId":"1","url":"http://zero.webappsecurity.com/","reference":"http://msdn.microsoft.com/en-us/library/ie/gg622941","solution":"Ensure that the application/web server sets the Content-Type header appropriately.","alert":"X-Content-Type-Options Header Missing","param":"","attack":"","name":"X-Content-Type-Options Header Missing","risk":"Low","id":"0"}]}</div>
+<br>
+<div>C:\Users\ASUS\Desktop\Nakul\Practical 11&gt;<span style="display:inline-block; width:8px; height:15px; background-color:#cccccc; margin-left:2px; vertical-align:bottom; animation: blink 1s step-end infinite;"></span></div>
+<style>
+@keyframes blink { 50% { opacity: 0; } }
+</style>
+</body>
+</html>
